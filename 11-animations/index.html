@@ -10,14 +10,32 @@
       width: 100px;
       height: 100px;
       background: red;
-      transition: transform .5s ease-in-out;
+      animation: 1.5s scaleAndRotateSquare infinite ease-in-out;
     }
-    .box:hover{
-      transform: rotate(1turn) scale(.5, .5);
+    /*@keyframes scaleAndRotateSquare {
+      from{
+
+      }
+      to{
+
+      }
+    }*/
+    @keyframes scaleAndRotateSquare {
+      0%{
+        transform:none;
+      }
+      50%{
+        transform: rotate(1turn) scale(.5, .5);
+        color:white;
+      }
+      100%{
+        transform: none;
+        color:blue;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="box"></div>
+  <div class="box">11</div>
 </body>
 </html>
