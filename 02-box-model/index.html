@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Box Model</title>
+  <style>
+    body,html{
+      padding: 0;
+      margin: 0;
+      background-color: green;
+      height: 100%;
+    }
+    .box{
+      background-color: yellow;
+      width: 50%;
+      height:50%;
+      padding:20px 10px 5px 2px;
+    }
+    .inside-box{
+      background-color: blue;
+      width:50%;
+      height: 50%;
+      border:5px dashed red;
+    }
+  </style>
+</head>
+<body>
+    <div class="box">
+      <div class="inside-box"></div>
+    </div>
+</body>
+</html>
